@@ -1,6 +1,6 @@
 # aula_nodejs
 
 ## A fazer 
-- [ ] Criar MD
+- [X] Criar MD
 - [ ] Aprender a fazer merge
 - [ ] Criar servidor express
