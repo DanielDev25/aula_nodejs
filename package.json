@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DanielDev25/aula_nodejs/issues"
   },
-  "homepage": "https://github.com/DanielDev25/aula_nodejs#readme"
+  "homepage": "https://github.com/DanielDev25/aula_nodejs#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
