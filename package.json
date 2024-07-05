@@ -1,0 +1,19 @@
+{
+  "name": "aula_nodejs",
+  "version": "1.0.0",
+  "description": "projeto para marcacao de ponto virtual",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielDev25/aula_nodejs.git"
+  },
+  "author": "Daniel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielDev25/aula_nodejs/issues"
+  },
+  "homepage": "https://github.com/DanielDev25/aula_nodejs#readme"
+}
