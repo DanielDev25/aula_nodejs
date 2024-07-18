@@ -1,4 +1,6 @@
 const express = require('express');
+const {listarFuncionarios} = require('./src/controller/funcionarioController')
+const {marcacoes} = require('./src/controller/marcacaoController')
 const app = express();
 const PORTA = 3000;
 
@@ -9,13 +11,13 @@ app.get('/', helloWorld);
 app.get('/health', mostrarHealth);
 
 // TODO: Adicionar rota para obter funcionário
-
+app.get('/funcionarios', listarFuncionarios)
 // TODO: Adicionar rota para salvar funcionário
 
 // TODO: Adiciona rota para marcação de ponto
 
 // TODO: Adicionar rota para listagem de marcações
-
+app.get('/marcacoes', marcacoes)
 // TODO: Adicionar rota para listagem de marcações por período
 
 
@@ -35,3 +37,7 @@ function mostrarHealth(req, res) {
 
 app.listen(PORTA)
 console.log("Serviço rodando na porta: ", PORTA);
+
+
+
+
