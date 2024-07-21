@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/DanielDev25/aula_nodejs#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "node-json-db": "^2.3.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
