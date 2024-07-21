@@ -18,14 +18,13 @@
   "homepage": "https://github.com/DanielDev25/aula_nodejs#readme",
   "dependencies": {
     "body-parser": "^1.20.2",
-<<<<<<< HEAD
+
     "date-format": "^4.0.14",
     "express": "^4.19.2",
     "lowdb": "^7.0.1",
-    "md5": "^2.3.0"
-=======
-    "express": "^4.19.2"
->>>>>>> 0738d22 (trabalhando com controllers)
+    "md5": "^2.3.0",
+    "node-json-db": "^2.3.0"
+
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
