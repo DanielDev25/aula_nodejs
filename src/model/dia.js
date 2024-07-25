@@ -26,6 +26,7 @@ class Dia {
     calculaHoraTrabalhadas(){
         
     }
+<<<<<<< HEAD
     async salva(){
         
         try{
@@ -52,3 +53,7 @@ class Dia {
 }
 
 module.exports = Dia;
+=======
+}
+
+>>>>>>> 0738d22 (trabalhando com controllers)

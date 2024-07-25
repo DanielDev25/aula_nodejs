@@ -11,6 +11,7 @@ class Marcacao {
         this.horaMarcada = horaFeita;
         this.horaPadrao = new Date(new Date().setHours(horaEsperada,0,0));
     }
+
     horaEfetiva(){
         if (this.horaMarcada - TOLERANCIA > this.horaPadrao || this.horaMarcada + TOLERANCIA < this.horaPadrao){
             return this.horaPadrao;
@@ -22,3 +23,7 @@ class Marcacao {
 
 let m = new Marcacao(Marcacao.TIPO.s2);
 console.log(m.horaPadrao, m.horaMarcada);
+
+
+module.exports = Marcacao;
+
