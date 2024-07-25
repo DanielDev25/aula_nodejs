@@ -27,6 +27,7 @@ class Dia {
         
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     async salva(){
         
         try{
@@ -57,3 +58,35 @@ module.exports = Dia;
 }
 
 >>>>>>> 0738d22 (trabalhando com controllers)
+=======
+}
+
+=======
+    async salva(){
+        
+        try{
+            await db.push(TABLE+"[]", {
+                data: this.data,
+                marcacoes: this.marcacoes
+            }, true);
+        } catch(err){
+            console.error('Falha ao salvar', err);
+            throw new Error('Falha ao salvar', err);
+        }
+    }
+
+    static async lista(){
+        try{
+            let resultado = await db.getData(TABLE);
+            console.table(resultado);
+            return resultado;
+        } catch(err){
+            console.error('Falha ao buscar', err);
+            throw new Error('Falha ao buscar', err);
+        }
+    }
+}
+
+module.exports = Dia;
+>>>>>>> ea7dcc8 (Atualização do banco)
+>>>>>>> 036c239 (Atualização do banco)

@@ -24,6 +24,5 @@ class Marcacao {
 let m = new Marcacao(Marcacao.TIPO.s2);
 console.log(m.horaPadrao, m.horaMarcada);
 
-
 module.exports = Marcacao;
 

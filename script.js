@@ -1,18 +1,18 @@
 const express = require('express');
 const bodyparser = require("body-parser")
 const {listarFuncionarios} = require('./src/controller/funcionarioController')
-<<<<<<< HEAD
+
 const {marcacoes} = require('./src/controller/marcacaoController')
 const {criarDia, listarDia} = require('./src/controller/diaController')
 const bodyParser = require('body-parser');
 
 const app = express();
 app.use(bodyParser.json());
-=======
-const {marcacoes, adicionaMarcacao} = require('./src/controller/marcacaoController')
-const app = express();
-app.use(bodyparser.json());
->>>>>>> 0738d22 (trabalhando com controllers)
+
+const {marcacoes} = require('./src/controller/marcacaoController')
+const {criarDia, listarDia} = require('./src/controller/diaController')
+const bodyParser = require('body-parser');
+
 const PORTA = 3000;
 
 // rota ação GET: root (raiz) -> helloWorld()
