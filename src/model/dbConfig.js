@@ -1,4 +1,6 @@
-import { JsonDB, Config } from "node-json-db";
+const {JSONFilePreset} = require('lowdb/node');
 
-export default db = new JsonDB(new Config("marcaPontoDB", true, false, "/"));
+const defaultData = { funcionarios:[], dias: [] };
+const db = await JSONFilePreset('db.json', defaultData);
 
+module.exports = {db};

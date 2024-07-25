@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/DanielDev25/aula_nodejs#readme",
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "date-format": "^4.0.14",
     "express": "^4.19.2",
-    "node-json-db": "^2.3.0"
+    "lowdb": "^7.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"

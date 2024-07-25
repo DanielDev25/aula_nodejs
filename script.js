@@ -1,24 +1,31 @@
 const express = require('express');
 const {listarFuncionarios} = require('./src/controller/funcionarioController')
 const {marcacoes} = require('./src/controller/marcacaoController')
+const {criarDia, listarDia} = require('./src/controller/diaController')
+const bodyParser = require('body-parser');
+
 const app = express();
+app.use(bodyParser.json());
 const PORTA = 3000;
 
-app.get('/', helloWorld);
 // rota ação GET: root (raiz) -> helloWorld()
+app.get('/', helloWorld);
 
-// TODO: Criar health
 app.get('/health', mostrarHealth);
 
-// TODO: Adicionar rota para obter funcionário
 app.get('/funcionarios', listarFuncionarios)
+
+app.get('/marcacoes', marcacoes)
+
 // TODO: Adicionar rota para salvar funcionário
 
 // TODO: Adiciona rota para marcação de ponto
 
-// TODO: Adicionar rota para listagem de marcações
-app.get('/marcacoes', marcacoes)
 // TODO: Adicionar rota para listagem de marcações por período
+
+app.post('/dias', criarDia);
+
+app.get('/dias', listarDia);
 
 
 function helloWorld(req, res) {
@@ -29,8 +36,8 @@ function helloWorld(req, res) {
 function mostrarHealth(req, res) {
   res.status(200);
   res.send({
-    recurso: 1,
-    pendentes: 5,
+    recurso: 2,
+    pendentes: 4,
     mensagem: "Serviço incompleto. Aguarde atualização."
   });
 }
