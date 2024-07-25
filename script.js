@@ -1,7 +1,9 @@
 const express = require('express');
+const bodyparser = require("body-parser")
 const {listarFuncionarios} = require('./src/controller/funcionarioController')
-const {marcacoes} = require('./src/controller/marcacaoController')
+const {marcacoes, adicionaMarcacao} = require('./src/controller/marcacaoController')
 const app = express();
+app.use(bodyparser.json());
 const PORTA = 3000;
 
 app.get('/', helloWorld);
@@ -15,6 +17,7 @@ app.get('/funcionarios', listarFuncionarios)
 // TODO: Adicionar rota para salvar funcionário
 
 // TODO: Adiciona rota para marcação de ponto
+app.post('/marcacoes', adicionaMarcacao)
 
 // TODO: Adicionar rota para listagem de marcações
 app.get('/marcacoes', marcacoes)

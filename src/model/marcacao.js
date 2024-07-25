@@ -7,3 +7,5 @@ class Marcacao {
 
     }
 }
+
+module.exports = Marcacao;
