@@ -16,8 +16,6 @@ async function criarDia(req, res){
             erro: JSON.stringify(err)
         })
     }
-    
-
 
 }
 
