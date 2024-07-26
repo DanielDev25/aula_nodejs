@@ -9,7 +9,10 @@ class Marcacao {
 
     horaEfetiva(){
         // TODO: Implementar método para calcular horas exatas.
+
     }
 }
+
+
 
 module.exports = Marcacao;
