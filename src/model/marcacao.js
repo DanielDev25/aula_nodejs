@@ -6,6 +6,12 @@ class Marcacao {
         this.horaPadrao = horaEsperada;
 
     }
+
+    CalculaHora(){
+        // TODO: implementar
+    }
 }
+
+
 
 module.exports = Marcacao;
