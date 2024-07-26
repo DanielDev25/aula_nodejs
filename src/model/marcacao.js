@@ -1,14 +1,15 @@
 class Marcacao {
     horaMarcada;
     horaPadrao;
-    constructor(horaEsperada, horaFeita = new Date()){
+    constructor(horaFeita = new Date()){
         this.horaMarcada = horaFeita;
         this.horaPadrao = horaEsperada;
 
     }
 
-    CalculaHora(){
-        // TODO: implementar
+    horaEfetiva(){
+        // TODO: Implementar método para calcular horas exatas.
+
     }
 }
 
